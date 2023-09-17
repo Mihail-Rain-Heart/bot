@@ -15,3 +15,9 @@ repositories {
 dependencies {
     implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.1.0")
 }
+
+if (providers.environmentVariable("CI").isPresent){
+    tasks.register("hello") {
+        print("Hello task finish on CI")
+    }
+}
