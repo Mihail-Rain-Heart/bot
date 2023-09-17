@@ -23,6 +23,7 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
+              hello
 
       - name: Run Tests
         run: ./gradlew test
